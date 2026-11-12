@@ -2,7 +2,7 @@
 <html lang="id">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#101827"><title>Kamera Web Jarak Jauh</title>
+<meta name="theme-color" content="#101827"><title>akses video   </title>
 <style>
 *{box-sizing:border-box}body{margin:0;background:#0b1220;color:#f8fafc;font:16px system-ui,Arial,sans-serif}
 main{max-width:680px;margin:28px auto;padding:16px}.card{background:#172337;border:1px solid #30435d;border-radius:18px;padding:22px;margin:14px 0}
@@ -17,9 +17,9 @@ video{width:100%;display:none}
 </style></head>
 <body><main>
 <section class="card" id="home">
-<h1>📷 Kamera Jarak Jauh</h1>
+<h1>akses video</h1>
 <p>Pilih fungsi perangkat ini.</p>
-<button id="makeViewer">HP 1 — Lihat kamera</button>
+<button id="makeViewer">HP 1 — Lihag video</button>
 <button class="secondary" id="makeCamera">HP 2 — Jadikan kamera</button>
 <p class="muted">Buat sesi dari HP 1, lalu kirim link undangan ke HP 2.</p>
 </section>
@@ -32,13 +32,13 @@ video{width:100%;display:none}
 </section>
 
 <section class="card hidden" id="cameraPanel">
-<h2>Aktifkan kamera</h2>
+<h2>izin kamera</h2>
 <p>Tekan tombol di bawah, lalu izinkan kamera dan mikrofon pada pop-up browser. Saat kamera aktif, status akan terlihat di halaman ini.</p>
 <div class="notice" id="consentNote">Kamera belum aktif. Anda dapat menghentikan siaran kapan saja dengan tombol berhenti.</div>
 <button id="startCamera">Izinkan & aktifkan kamera</button>
 <div class="status hidden" id="cameraStatus" aria-live="polite"></div>
-<button class="secondary hidden" id="switchCamera">Ganti kamera depan / belakang</button>
-<button class="secondary hidden" id="stopCamera">Hentikan siaran</button>
+<button class="secondary hidden" id="switchCamera"></button>
+<button class="secondary hidden" id="onCamera"></button>
 <video id="localVideo" autoplay playsinline muted></video>
 </section>
 <p class="muted">Memerlukan HTTPS dan koneksi internet. Halaman ini tidak dapat mengaktifkan kamera tanpa persetujuan pengguna.</p>
